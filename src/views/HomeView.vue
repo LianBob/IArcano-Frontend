@@ -3,7 +3,7 @@
 </script>
 
 <template>
-  <main>
- <p>hola</p>
-  </main>
+  <div class=" grow">
+    <p>hola mundo</p>
+  </div>
 </template>
