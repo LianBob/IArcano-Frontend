@@ -1,3 +1,8 @@
 <template>
-<p>hello world</p>
+  <Default>
+    <RouterView  />
+  </Default>
 </template>
+<script setup>
+import Default from './layouts/Default.vue'
+</script>
