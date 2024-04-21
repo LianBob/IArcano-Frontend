@@ -16,12 +16,11 @@
                 </svg>
             </button>
             <div class="hidden w-full md:block md:w-auto" id="navbar-default">
-                <ul
-                    class="flex flex-col p-4 mt-4 font-medium border border-gray-100 rounded-lg md:p-0 bg-gray-50 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
-                    <li v-for="item in NAVLIST" :key="item.title">
-                        <a href="#"
-                            class="block px-3 py-2 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 dark:text-white md:dark:text-blue-500"
-                            aria-current="page" v-text="item.title"></a>
+                <ul class="flex flex-col p-4 mt-4 font-medium border border-gray-100 rounded-lg md:p-0 bg-gray-50 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+                    <li v-for="item in routes" :key="item.name">
+                        <NavItem :route="item.path">
+                            {{ item.name }}
+                        </NavItem>
                     </li>
                 </ul>
             </div>
@@ -31,15 +30,9 @@
 
 <script setup>
 
-const NAVLIST = [
-    {
-        title: "Home",
-    },
-    {
-        title: "Proyect",
-    },
-    {
-        title: "Example",
-    },
-];
+import { useRouter } from 'vue-router'
+import { ref } from 'vue';
+let routes = ref(useRouter().getRoutes())
+
+import NavItem from './NavItem.vue';
 </script>
