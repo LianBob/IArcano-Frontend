@@ -4,7 +4,7 @@
       v-if="isShow"
       id="alert-4"
       :class="typeAlert.text"
-      class="flex items-center p-4 mb-4 rounded-b-lg mt-2 dark:bg-[hsl(221,39%,18%)]"
+      class="flex items-center p-4 mb-4 rounded-lg mt-2 dark:bg-[hsl(221,39%,18%)]"
       role="alert"
     >
       <svg

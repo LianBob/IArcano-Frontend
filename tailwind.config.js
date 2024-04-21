@@ -1,6 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 import flowbite from 'flowbite/plugin'
-
+import animations from '@midudev/tailwind-animations'
 export default {
   content: [
     "./index.html",
@@ -12,5 +12,7 @@ export default {
     extend: {}
   },
   
-  plugins: [flowbite],
+  plugins: [flowbite,animations],
 }
+
+

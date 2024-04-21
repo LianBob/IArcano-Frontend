@@ -20,8 +20,7 @@
 </template>
 
 <script setup>
-import Footer from '@/components/Footer.vue'
-
+import Footer from '@/components/footer/Footer.vue';
 import Nav from '@/components/nav/Nav.vue'
 import Loader from '@/components/Loader.vue';
 </script>

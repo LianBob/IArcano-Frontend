@@ -1,6 +1,6 @@
 <template>
     <div>About</div>
-<Alert type="danger">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odit, dolor.</Alert>
+<Alert v-if="true" class=" " type="danger">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odit, dolor.</Alert>
   </template>
   
   <script setup>
