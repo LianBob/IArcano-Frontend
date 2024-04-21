@@ -1,6 +1,10 @@
 <template>
   <div class="flex flex-col justify-between h-screen">
-    <Nav />
+    <div>
+      <Nav />
+      <div id="toTeleport" ></div>
+    </div>
+   
     <Suspense>
       <template #default>
         <slot />
