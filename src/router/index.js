@@ -3,8 +3,9 @@ import Home from '@/views/Home.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
-
+ 
   routes: [
+        
     {
       path: '/',
       name: 'home',
@@ -39,10 +40,10 @@ const router = createRouter({
     },
     {
       path: '/user/:id',
-      name: 'services',
+      name: 'perfil',
       component: () => import('../views/Perfil.vue')
     },
-    
+
   ]
 })
 
