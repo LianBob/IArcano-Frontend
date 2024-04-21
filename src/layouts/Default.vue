@@ -1,26 +1,29 @@
 <template>
-  <div class="flex flex-col justify-between h-screen">
-    <div>
-      <Nav />
-      <div id="toTeleport" ></div>
-    </div>
-   
-    <Suspense>
-      <template #default>
+  <Suspense>
+    <template #default>
+      <div class="flex flex-col justify-between h-screen">
+        
+        <div>
+          <Nav />
+          <div id="toTeleport"></div>
+        </div>
         <slot />
-      </template>
-      <template #fallback>
-        <Loader />
-      </template>
-    </Suspense>
-    <Footer />
-  </div>
+
+        <Footer />
+      </div>
+    </template>
+
+    <template #fallback>
+      <Loader />
+    </template>
+  </Suspense>
 </template>
 
 <script setup>
 import Footer from '@/components/Footer.vue'
 
 import Nav from '@/components/nav/Nav.vue'
+import Loader from '@/components/Loader.vue';
 </script>
 
 <style lang="scss" scoped></style>
