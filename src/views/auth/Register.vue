@@ -1,7 +1,12 @@
 <template>
-  <div>Register</div>
+
+<div v-for="item in routes" :key="item.name">
+   
+    <p v-if="item.children ==0">{{ item.name }}</p>
+</div>
 </template>
+<script setup>
+import {  useRouter } from 'vue-router';
 
-<script setup></script>
-
-<style lang="scss" scoped></style>
+let routes = useRouter().getRoutes()
+</script>
