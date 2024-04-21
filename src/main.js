@@ -1,5 +1,5 @@
 import './assets/output.css'
-
+import 'flowbite/lib/esm/index'
 import { createApp } from 'vue'
 import { createPinia } from 'pinia'
 

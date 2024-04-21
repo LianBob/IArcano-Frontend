@@ -1168,6 +1168,11 @@ input:checked + .toggle-bg {
   margin-right: auto;
 }
 
+.mx-32 {
+  margin-left: 8rem;
+  margin-right: 8rem;
+}
+
 .mb-1 {
   margin-bottom: 0.25rem;
 }
@@ -1194,6 +1199,10 @@ input:checked + .toggle-bg {
 
 .mt-4 {
   margin-top: 1rem;
+}
+
+.mt-1 {
+  margin-top: 0.25rem;
 }
 
 .block {
@@ -1458,6 +1467,10 @@ input:checked + .toggle-bg {
   border-radius: 0.5rem;
 }
 
+.rounded-md {
+  border-radius: 0.375rem;
+}
+
 .rounded-e-lg {
   border-start-end-radius: 0.5rem;
   border-end-end-radius: 0.5rem;
@@ -1476,6 +1489,11 @@ input:checked + .toggle-bg {
 .rounded-s-lg {
   border-start-start-radius: 0.5rem;
   border-end-start-radius: 0.5rem;
+}
+
+.rounded-b-lg {
+  border-bottom-right-radius: 0.5rem;
+  border-bottom-left-radius: 0.5rem;
 }
 
 .border {
@@ -1569,6 +1587,16 @@ input:checked + .toggle-bg {
   background-color: rgb(255 255 255 / 0.5);
 }
 
+.bg-yellow-200 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(252 233 106 / var(--tw-bg-opacity));
+}
+
+.bg-blue-400 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(118 169 250 / var(--tw-bg-opacity));
+}
+
 .bg-\[linear-gradient\(to_right\2c \#8080800a_1px\2c transparent_1px\)\2c linear-gradient\(to_bottom\2c \#8080800a_1px\2c transparent_1px\)\] {
   background-image: linear-gradient(to right,#8080800a 1px,transparent 1px),linear-gradient(to bottom,#8080800a 1px,transparent 1px);
 }
@@ -1627,6 +1655,11 @@ input:checked + .toggle-bg {
   padding-bottom: 0.75rem;
 }
 
+.px-4 {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
 .pt-2 {
   padding-top: 0.5rem;
 }
@@ -1648,6 +1681,11 @@ input:checked + .toggle-bg {
 .text-sm {
   font-size: 0.875rem;
   line-height: 1.25rem;
+}
+
+.text-3xl {
+  font-size: 1.875rem;
+  line-height: 2.25rem;
 }
 
 .font-medium {
@@ -1892,6 +1930,11 @@ input:checked + .toggle-bg {
   border-color: transparent;
 }
 
+.dark\:bg-\[\#111827\]:is(.dark *) {
+  --tw-bg-opacity: 1;
+  background-color: rgb(17 24 39 / var(--tw-bg-opacity));
+}
+
 .dark\:bg-blue-600:is(.dark *) {
   --tw-bg-opacity: 1;
   background-color: rgb(28 100 242 / var(--tw-bg-opacity));
@@ -1923,6 +1966,40 @@ input:checked + .toggle-bg {
 
 .dark\:bg-gray-900\/80:is(.dark *) {
   background-color: rgb(17 24 39 / 0.8);
+}
+
+.dark\:bg-\[hsl\(221\2c 39\%\2c 11\%\)\]:is(.dark *) {
+  --tw-bg-opacity: 1;
+  background-color: hsl(221 39% 11% / var(--tw-bg-opacity));
+}
+
+.dark\:bg-\[rgb\(17\2c 24\2c 39\)\]:is(.dark *) {
+  --tw-bg-opacity: 1;
+  background-color: rgb(17 24 39 / var(--tw-bg-opacity));
+}
+
+.dark\:bg-\[hsl\(221\2c 39\%\2c \%\)\]:is(.dark *) {
+  background-color: hsl(221,39%,%);
+}
+
+.dark\:bg-\[hsl\(221\2c 39\%\2c 40\%\)\]:is(.dark *) {
+  --tw-bg-opacity: 1;
+  background-color: hsl(221 39% 40% / var(--tw-bg-opacity));
+}
+
+.dark\:bg-\[hsl\(221\2c 39\%\2c 20\%\)\]:is(.dark *) {
+  --tw-bg-opacity: 1;
+  background-color: hsl(221 39% 20% / var(--tw-bg-opacity));
+}
+
+.dark\:bg-\[hsl\(221\2c 39\%\2c 15\%\)\]:is(.dark *) {
+  --tw-bg-opacity: 1;
+  background-color: hsl(221 39% 15% / var(--tw-bg-opacity));
+}
+
+.dark\:bg-\[hsl\(221\2c 39\%\2c 18\%\)\]:is(.dark *) {
+  --tw-bg-opacity: 1;
+  background-color: hsl(221 39% 18% / var(--tw-bg-opacity));
 }
 
 .dark\:text-blue-300:is(.dark *) {
