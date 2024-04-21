@@ -1,8 +1,14 @@
 <template>
-  <div class=" flex flex-col justify-between h-screen">
-
+  <div class="flex flex-col justify-between h-screen">
     <Nav />
-    <slot />
+    <Suspense>
+      <template #default>
+        <slot />
+      </template>
+      <template #fallback>
+        <Loader />
+      </template>
+    </Suspense>
     <Footer />
   </div>
 </template>
