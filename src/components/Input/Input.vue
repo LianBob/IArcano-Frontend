@@ -13,6 +13,8 @@ import TextAreaInput from './TextAreaInput.vue'
 import CheckBox from './CheckBox.vue'
 import Radio from './Radio.vue'
 import Toggle from './Toggle.vue'
+import EmailInput from './EmailInput.vue'
+import PasswordInput from './PasswordInput.vue'
 let props = defineProps(['type', 'place'])
 const shcemaInput = {
   text: TextInput,
@@ -23,7 +25,9 @@ const shcemaInput = {
   area: TextAreaInput,
   check: CheckBox,
   radio: Radio,
-  toggle: Toggle
+  toggle: Toggle,
+  email: EmailInput,
+  password: PasswordInput
 }
 
 let inputType = computed(() => {

@@ -1,5 +1,5 @@
 <template>
-  <div class="max-w-sm mx-auto">
+  <div class="">
     <label for="phone-input" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
       ><slot
     /></label>
